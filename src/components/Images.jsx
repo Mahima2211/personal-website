@@ -4,22 +4,16 @@ import '../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 
 const images = [
     {
-      original: '../../images/image1.JPG',
-      thumbnail: '../../images/image1.JPG'
+      original: '../../images/image1.jpeg',
     },
     {
-      original: '../../images/image2.JPG',
-      thumbnail: '../../images/image2.JPG',
-    },
-    {
-      original: '../../images/image3.JPG',
-      thumbnail: '../../images/image3.JPG',
+      original: '../../images/image2.jpg',
     },
 ];
 class Images extends Component {
 
     render() {
-        return <ImageGallery items={images} sizes="1x1"/>;
+        return <ImageGallery items={images} showThumbnails={false}/>;
       }
 }
 

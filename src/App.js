@@ -1,18 +1,24 @@
-import logo from './logo.svg';
-//import './App.css';
-import 'primereact/resources/themes/luna-blue/theme.css';
+import './stylesheets/App.css';
+import 'primereact/resources/themes/bootstrap4-dark-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import { Fieldset } from 'primereact/fieldset';
-import { useState } from 'react';
+import 'primeflex/primeflex.css';
 import Main from './components/Main'
 import Images from './components/Images'
 
 function App() {
   return (
-    <div>
-      <Main></Main>
-      <Images></Images>
+    <div className="p-grid p-dir-col">
+      <div className="p-col p-grid App-div-all">
+        <div className="p-col-3"></div>
+        <div className="p-col-6 App-div">
+          <Main></Main>
+        </div>
+        <div className="p-col-3"></div>
+      </div>
+      <div className="p-col App-div-all">
+        <Images></Images>
+      </div>
     </div>
   );
 }
