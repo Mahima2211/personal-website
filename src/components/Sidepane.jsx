@@ -14,7 +14,7 @@ function Sidepane() {
             <div className="card">
                 <Sidebar visible={visibleLeft} baseZIndex={1000000} onHide={() => setVisibleLeft(false)}>
                     <h1 style={{ fontWeight: 'normal' }}>Left Sidebar</h1>
-                    <Button type="button" onClick={() => setVisibleLeft(false)} label="Save" className="p-button-success" style={{ marginRight: '.25em' }} />
+                    <Button type="button" onClick={() => this.props.onAboutClicked()} label="About" className="p-button-success" style={{ marginRight: '.25em' }} />
                     <Button type="button" onClick={() => setVisibleLeft(false)} label="Cancel" className="p-button-secondary" />
                 </Sidebar>
 
